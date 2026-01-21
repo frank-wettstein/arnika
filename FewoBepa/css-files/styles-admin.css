@@ -1,0 +1,74 @@
+﻿*{margin:0;padding:0;}
+body{font-family:arial,verdana,sans-serif;background:url(../image-files/bg.jpg) repeat;font-size:100%;}
+a{text-decoration:none;color:#2e506d;}
+a:hover{text-decoration:underline;}
+header,footer{display:block;}
+#wrapper{margin:12px auto;width:900px;background:#f8f9fc;-webkit-box-shadow:0px 0px 10px #000;box-shadow: 0px 0px 10px #000;}
+header{height:96px;background:url(../image-files/layout.jpg);color:#2e506d;}
+h1{float:left;margin:12px 0 0 60px;font-size:100%;font-weight:bold;}
+h1 span{display:block;font-size:80%;}
+#hnav{float:right;margin:7px 0 0 0;font-size:75%;}
+#hnav a{padding:0 10px;color:#2e506d;font-weight:bold;text-decoration:none;}
+#hnav a:hover{text-decoration:underline;}
+#hnav a:first-child{border:0;}
+nav{clear:both;float:left;margin:21px 0 0 10px;width:750px;}
+nav ul{list-style:none;font-size:80%;}
+nav li{display:inline-block;margin:0 20px 0 0;}
+nav ul a{text-decoration:none;color:#2e506d;font-weight:bold;}
+nav ul a:hover{color:#fff;text-decoration:none;}
+#logout{float:right;margin:19px 10px 0 0;}
+#logout fieldset{border:0;}
+#logout input{padding:1px 0 0 0;border:1px #1781bb solid;cursor:pointer;}
+article{float:left;;margin:0 0 10px 10px;width:700px;font-size:90%;}
+h2{margin:7px 0 0 0;font-size:120%;}
+article p{margin:10px 0 0 0;}
+article ul{margin:10px 0 10px 20px;}
+article ol{margin:10px 0 0 20px;font-weight:bold;}
+article ol ul{margin:0 0 10px 20px;list-style:disc;font-weight:normal;}
+article ol ul ul{list-style:circle;}
+aside{float:right;width:180px;font-size:80%;}
+.wrap{margin:7px 10px 20px 0;}
+.wrap .ext{margin:15px 10px 0 0;}
+.wrap .title{margin:5px 0;padding:0 0 2px 0;font-weight:bold;font-size:110%;border-bottom:2px #1d80c1 dotted;text-align:center;}
+.wrap .text{padding:3px 3px;background:#edf2f8;}
+footer{clear:both;height:46px;background:url('../image-files/layout.jpg') 0 -97px;}
+footer p{padding:18px 0 0 0;color:#2e506d;font-size:75%;font-weight:bold;text-align:center;}
+#noScript{padding:10px;width:880px;background:#ffcccc;border:1px #990000 solid;font-size:80%;text-align:center;}
+#loginForm fieldset{margin:10px 0 5px 0;background:#f1f4f9;border:1px #c1d4e5 solid;}
+#loginForm legend{margin:0 0 0 10px;padding:2px 5px;font-weight:bold;color:#fff;background:#308dc8;border:1px #fff solid;}
+#loginForm label{width:40%;float:left;clear:both;margin:5px 0 0 10px;}
+#loginForm select{float:left;margin:0 0 10px 0;border:1px #c1d4e5 solid;}
+#loginForm input{float:left;margin:0 0 10px 0;border:1px #c1d4e5 solid;}
+#loginForm input[type='submit']{margin:10px 0 10px 10px;padding:2px 5px;color:#163974;}
+#loginForm img{float:left;margin:0 0 0 10px;}
+#loginErrors{margin:10px 0 0 0;color:red;font-weight:bold;}
+#adminTable,#designTable,#settingsTable{margin:10px 0 0 0;width:100%;border-top:1px solid #1d80c1;border-right:1px #1d80c1 solid;border-collapse:collapse;}
+#adminTable thead,#designTable thead,.designTopRow,.settingsTopRow{background:#c1d4e5;font-weight:bold;}
+#adminTable thead th,#designTable thead th,.designTopRow td,.settingsTopRow td{padding:5px 2px;border-bottom:1px #1d80c1 solid;border-left:1px #1d80c1 solid;color:#fff;}
+#adminTable td{padding:10px;color:#000;border-bottom:1px #1d80c1 solid;border-left:1px #1d80c1 solid;}
+#adminTableTopicCol{width:210px;}
+#designTable td,#settingsTable td{padding:5px 2px;border-bottom:1px #1d80c1 solid;border-left:1px #1d80c1 solid;}
+.designTopRowCenter td{text-align:center;}
+#designTable select,#settingsTable select{width:99%;}
+#designTable input{width:80%;}
+#designTable td img{margin:0 0 0 10px;vertical-align:text-top;}
+#occuPlanSubmit,#designSubmit,#settingsSubmit{margin:10px 0 0 0;padding:5px 20px;color:#163974;border:1px #1781bb solid;font-size:100%;cursor:pointer;}
+#occuPlanSubmit{font-size:120%;}
+#settingsTable td img{vertical-align:text-top;}
+#settingsTable #apartmentNames input{width:58%;margin:2px 0;}
+#settingsTable #apartmentNames img{margin:0 0 0 10px;}
+#settingsTable input{vertical-align:middle;}
+#settingsTable input[type="text"]{width:98%;}
+.settingsTopColInfo{text-align:center;width:35px;}
+.oddRow{background:#f2f5fc;}
+.textAlignRight{text-align:right;vertical-align:top;}
+#occuPlanWrapper{margin:10px 0 0 0;font-size:11px;font-weight:bold;font-family:arial;}
+#monthSelection span{cursor:pointer;}
+#monthSelection img{margin:0 0 0 5px !important;padding:1px;border:0 !important;}
+#occuPlanTable td{width:19px;line-height:19px;}
+#occuPlanTable input{vertical-align:middle;}
+#b3Months,#b1Months,#f3Months,#f1Months{float:left;width:12px;height:12px;margin:1px 0 0 5px;background:url('../image-files/arrows.png');}
+#b3Months{background-position:0 -39px;}
+#b1Months{background-position:0 -26px;}
+#f3Months{background-position:0 -91px;}
+#f1Months{background-position:0 -78px;}

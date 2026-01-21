@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Fahrplan</title>
+
+
+</head>
+
+<body bgcolor="#333333">
+<script language="JavaScript1.2" type="text/javascript">
+/* <![CDATA[ */
+var time=new Date();
+var hour = time.getHours(); hour=(hour<10)? '0'+hour:hour;
+var minute = time.getMinutes();minute=(minute<10)? '0'+minute:minute;
+var travelTime = hour+':'+minute;
+document.formular.REQ0JourneyTime.value=travelTime;
+// /* ]]> */
+</script>
+
+<table width="700" height="250" cellspacing="0" cellpadding="10" align="center" valign="middle" style="margin-top:100px">
+  <tr>
+    <td style=" background-color:#FFFFFF">
+    <div style="width: 340px; margin: 0px; padding: 0px; text-align: right; background-color:#FFFFFF;"> <img src="http://fahrplan.sbb.ch/img/ig-sbblogo.gif" width="136" height="22" alt="SBB|CFF|FFS" />
+      <h1 style="width:340px; background-color:#DDDDDD; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight: bold; padding: 2px 0px; margin: 0; height: 15px; text-align: left;clear:both;"> Fahrplan</h1>
+      <div style="width: 100%; background-color: #F8F8F8; margin: 0; padding: 0px;" summary="Layout">
+        <form action="http://fahrplan.sbb.ch/bin/query.exe/dn?externalCall=yes&amp;DCSext.wt_fp_request=partner_standard" method="post" name="formular" target="_blank" id="formular" style="display:inline">
+          <input type="hidden" name="queryPageDisplayed" value="yes" />
+          <table cellspacing="0" cellpadding="4" style="width: 330px; margin: 4px;" class="ig">
+            <tr>
+              <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;"><select name="REQ0JourneyStopsSA" style="background-color:#fff; border: 1px solid #7F9DB9; color: #000; width: 108px;">
+                <option selected="selected" value="7">Von:</option>
+                <option  value="1">Bhf./Haltest.</option>
+                <option  value="2">Ort, Strasse Nr.</option>
+                <option  value="4">Sehenswürdigkeit</option>
+              </select></td>
+              <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;" colspan="2"><input type="text" name="REQ0JourneyStopsSG" value="" size="16" style="width:215px;background-color:#fff; border: 1px solid #7F9DB9; color: #000; " accesskey="f" tabindex="1" />
+                <input type="hidden" name="REQ0JourneyStopsSID" /></td>
+            </tr>
+            <tr>
+              <th nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; font-weight:bold; width: 55px;"> Nach: </th>
+              <td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;" colspan="2"><input type="hidden" name="REQ0JourneyStopsZID" value="A=1@O=Adelboden, Jugendh. Heilsarmee@X=7540169@Y=46485602@U=85@L=8592313@B=1@p=1422451612@" />
+                <span style="font-weight:bold;">Adelboden, Jugendh. Heilsarmee</span></td>
+            </tr>
+            <tr>
+              <th nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; font-weight:bold; width: 55px;"> Datum: </th>
+              <td nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;"><b>28.01.15</b>
+                <input type="hidden" name="REQ0JourneyDate" value="28.01.15" accesskey="d" /></td>
+            </tr>
+            <tr>
+              <th nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; font-weight:bold; width: 55px;"> Zeit: </th>
+              <td nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;"><input type="text" name="REQ0JourneyTime" value="16:21" size="5" maxlength="5" style="border:solid 1px #7E9EB9;" accesskey="c" tabindex="4" /></td>
+              <td nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;"><input class="radio" type="radio" name="REQ0HafasSearchForw" value="1"  checked="checked" style="margin-right:3px;" />
+                Abfahrt
+                <input class="radio" type="radio" name="REQ0HafasSearchForw" value="0"   style="margin-right:3px;" />
+                Ankunft </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="2" style="text-align:left;"><input type="hidden" name="start" value="Suchen" />
+                <input type="submit" name="start" value="Verbindung suchen" tabindex="5" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; width:130px; vertical-align: middle; cursor:pointer; -moz-border-radius: 3px 3px 3px 3px; background-color:#EE0000; border:1px solid #B20000; color:#FFFFFF; font-weight:bold; height:auto; line-height:20px; padding:0px 10px; text-decoration:none; white-space:nowrap;" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="2" style="text-align:left;"><a style="font-family:Arial,Helvetica,sans-serif; font-size:12px;  margin-top:4px; color: #6B7786; text-decoration:none; display:block;" href="http://www.sbb.ch/166" target="_blank" title="Aktuelle Informationen zu Streiks und grösseren Unterbrüchen im Schienenverkehr."><img src="http://fahrplan.sbb.ch/img/one/icon_arrow_right.png" alt="" style="vertical-align:top; padding-right:2px; border:none;" />Bahnverkehrsinformation</a></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div></td>
+    <td>&nbsp;</td>
+    <td  bgcolor="#ffffff"><div style="width: 340px; margin: 0px; padding: 0px; text-align: right; background-color:#FFFFFF;">
+<img src="http://fahrplan.sbb.ch/img/ig-sbblogo.gif" width="136" height="22" alt="SBB|CFF|FFS" />
+<h1 style="width:340px; background-color:#DDDDDD; color: #000000; font-family: Arial, Helvetica, sans-serif; font-size:12px; font-weight: bold; padding: 2px 0px; margin: 0; height: 15px; text-align: left;clear:both;"> Fahrplan</h1>
+<div style="width: 100%; background-color: #F8F8F8; margin: 0; padding: 0px;" summary="Layout">
+<form action="http://fahrplan.sbb.ch/bin/query.exe/dn?externalCall=yes&DCSext.wt_fp_request=partner_standard" name="formular" method="post" style="display:inline" target="_blank">
+<input type="hidden" name="queryPageDisplayed" value="yes">
+<table cellspacing="0" cellpadding="4" style="width: 330px; margin: 4px;" class="ig">
+<tr>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;">
+<select name="REQ0JourneyStopsSA" style="background-color:#fff; border: 1px solid #7F9DB9; color: #000; width: 108px;">
+<option selected="selected" value="7">Von:</option>
+<option  value="1">Bhf./Haltest.</option>
+<option  value="2">Ort, Strasse Nr.</option>
+<option  value="4">Sehenswürdigkeit</option>
+</select>
+</td>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;" colspan="2">
+<input type="text" name="REQ0JourneyStopsSG" value="" size="16" style="width:215px;background-color:#fff; border: 1px solid #7F9DB9; color: #000; " accesskey="f" tabindex="1">
+<input type="hidden" name="REQ0JourneyStopsSID">
+</td>
+</tr>
+<tr>
+<th nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; font-weight:bold; width: 55px;">
+ Nach: 
+</th>
+<td style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;" colspan="2">
+<input type="hidden" name="REQ0JourneyStopsZID" value="A=1@O=Adelboden, Post@X=7560296@Y=46493692@U=85@L=8507851@B=1@p=1422451612@">
+<span style="font-weight:bold;">Adelboden, Post</span>
+</td>
+</tr>
+<tr>
+<th nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; font-weight:bold; width: 55px;">
+ Datum: 
+</th>
+<td nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;">
+<b>28.01.15</b>
+<input type="hidden" name="REQ0JourneyDate" value="28.01.15" accesskey="d">
+</td>
+</tr>
+<tr>
+<th nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; font-weight:bold; width: 55px;">
+ Zeit: 
+</th>
+<td nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;">
+<input type="text" name="REQ0JourneyTime" value="16:45" size="5" maxlength="5" style="border:solid 1px #7E9EB9;" accesskey="c" tabindex="4">
+</td>
+<td nowrap="nowrap" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:left; vertical-align:middle; padding:2px 3px 2px 0px;">
+<input class="radio" type="radio" name="REQ0HafasSearchForw" value="1"  checked style="margin-right:3px;">Abfahrt 
+<input class="radio" type="radio" name="REQ0HafasSearchForw" value="0"   style="margin-right:3px;">Ankunft
+</td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="2" style="text-align:left;">
+<input type="hidden" name="start" value="Suchen">
+<input type="submit" name="start" value="Verbindung suchen" tabindex="5" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; text-align:center; width:130px; vertical-align: middle; cursor:pointer; -moz-border-radius: 3px 3px 3px 3px; background-color:#EE0000; border:1px solid #B20000; color:#FFFFFF; font-weight:bold; height:auto; line-height:20px; padding:0px 10px; text-decoration:none; white-space:nowrap;">
+</td>
+</tr>
+<tr>
+<td> </td>
+<td colspan="2" style="text-align:left;">
+<a style="font-family:Arial,Helvetica,sans-serif; font-size:12px;  margin-top:4px; color: #6B7786; text-decoration:none; display:block;" href="http://www.sbb.ch/166" target="_blank" title="Aktuelle Informationen zu Streiks und grösseren Unterbrüchen im Schienenverkehr."><img src="http://fahrplan.sbb.ch/img/one/icon_arrow_right.png" alt="" style="vertical-align:top; padding-right:2px; border:none;" />Bahnverkehrsinformation</a>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</div>
+<script language="JavaScript1.2" type="text/javascript">
+/* <![CDATA[ */
+var time=new Date();
+var hour = time.getHours(); hour=(hour<10)? '0'+hour:hour;
+var minute = time.getMinutes();minute=(minute<10)? '0'+minute:minute;
+var travelTime = hour+':'+minute;
+document.formular.REQ0JourneyTime.value=travelTime;
+// /* ]]> */
+</script>
+</td>
+  </tr>
+  
+</table>
+</body>
+</html>

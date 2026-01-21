@@ -1,0 +1,11 @@
+﻿nav li{display:inline;}
+#loginForm input{clear:both;margin:10px;}
+#loginForm fieldset{padding:0 0 10px 0;}
+#logout{float:right;margin:10px 0 0 200px;}
+#occuPlanTable{text-align:center;}
+#occuPlanTable td{width:1%;}
+#occuPlanTrFooter td{width:0.9%;}
+#occuPlanTable input{width:15px;margin:-2px;vertical-align:text-top;}
+#designTopCol1{width:120px;}
+#designTopCol3{width:230px;}
+#settingsTopCol4{width:290px;}
