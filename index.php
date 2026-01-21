@@ -2,9 +2,20 @@
 <!DOCTYPE HTML>
 <html><head>
         <meta charset="UTF-8">
-        <meta name="Keywords" content="Ferien, Ferienwohnung, Adelboden, Berner Oberland, Oberland, Fewo, FeWo, Arnika" />
-		<meta name="Description" content="Gem&uuml;tliche 4,5-Zimmer-Ferienwohnung in Adelboden" />
-		<meta name="Content-Language" content="de" />
+        <meta name="keywords" content="Ferien, Ferienwohnung, Adelboden, Berner Oberland, Chalet, Skiferien, Familienurlaub, Schweizer Alpen" />
+        <meta name="description" content="Gem&uuml;tliche 4,5-Zimmer-Ferienwohnung in Adelboden zu vermieten. 3 Schlafzimmer, grosser Balkon mit herrlicher Aussicht auf Lohner und Steghorn. Ideal f&uuml;r Familien - Sommer und Winter." />
+        <meta name="Content-Language" content="de" />
+
+        <!-- Open Graph / Social Media -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Ferienwohnung Chalet Arnika - Adelboden" />
+        <meta property="og:description" content="Gem&uuml;tliche 4,5-Zimmer-Ferienwohnung mit herrlicher Aussicht im Berner Oberland. 3 Schlafzimmer, grosser Balkon - ideal f&uuml;r Familien." />
+        <meta property="og:image" content="https://www.chalet-adelboden.ch/img/chalet-slide-3.jpg" />
+        <meta property="og:url" content="https://www.chalet-adelboden.ch/" />
+        <meta property="og:locale" content="de_CH" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.chalet-adelboden.ch/" />
         <meta name="author" content="ferrari@web5.ch">
         <meta name="copyright" content="(c)Chalet Arnika, Dora Wettstein">
         <meta name="page-topic" content="Ferien, Immobilien">
@@ -151,7 +162,41 @@
 	</script>
 	
 
-	</head>
+        <!-- Strukturierte Daten / Schema.org -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LodgingBusiness",
+            "name": "Chalet Arnika",
+            "description": "Gemütliche 4,5-Zimmer-Ferienwohnung in Adelboden mit herrlicher Aussicht auf Lohner und Steghorn",
+            "url": "https://www.chalet-adelboden.ch/",
+            "image": "https://www.chalet-adelboden.ch/img/chalet-slide-3.jpg",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Röschtalweg 8",
+                "addressLocality": "Adelboden",
+                "postalCode": "3715",
+                "addressRegion": "BE",
+                "addressCountry": "CH"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "46.485896",
+                "longitude": "7.5506234"
+            },
+            "priceRange": "CHF 500/Woche",
+            "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "3 Schlafzimmer", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Balkon", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Küche", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "WLAN", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Parkplatz", "value": true}
+            ],
+            "numberOfRooms": "4.5",
+            "petsAllowed": "Auf Anfrage"
+        }
+        </script>
+    </head>
 
 	<body>
         <header>
@@ -209,10 +254,10 @@
                 <img src="img/slide15.jpg" alt="Die Aussicht">
             </div>-->
             <div id="slides">
-                <img src="img/slide4.jpg" alt="Das Chalet">
-                <img src="img/slide5.jpg" alt="Die Aussicht">    	
-                <img src="img/slide7.jpg" alt="Die Aussicht">    	
-               
+                <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
+                <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
+                <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
+
             </div>
             
         </section>
@@ -223,7 +268,7 @@
         <section id="boxcontent">
        	  <h2 class="hidden">Beschreibung Wohnung</h2>
             <article>            	               
-                <img src="img/icon1.png" alt="Beschreibung Wohnung"/>                
+                <img src="img/icon1.png" alt="Icon Wohnungsbeschreibung - 4,5-Zimmer-Ferienwohnung Adelboden"/>                
                 <h3>Beschreibung</h3>
                 <p>Die grosszügige 4 ½- Zimmer-Wohnung liegt im 1. Stock und präsentiert sich folgendermassen:</p>
                <ul class="subspace">
@@ -235,11 +280,11 @@
                   <li>separates WC,</li>
                   <li>grosser Balkon in südwestlicher Richtung mit windgeschützter Sitzecke.</li>
                 </ul>
-              <p>&raquo; <a class="various fancybox.iframe" href="build/virtualtour.html" title="Virtueller Rundgang">                  
+              <p>&raquo; <a class="various fancybox.iframe" href="ferienwohnung/virtualtour.html" title="Virtueller Rundgang">                  
                Virtueller Rundgang</a></p>
             </article>
           <article>            	     
-                <img src="img/icon2.png" alt="Lage"/>              
+                <img src="img/icon2.png" alt="Icon Lage - Chalet Arnika im Stiegelschwand oberhalb Adelboden"/>              
             <h3>Lage</h3>
               <p>        	
               Adelboden (1'350 m ü. M., ) liegt im Westen des Berner Oberlands, am Ende des Engstligentals und  verfügt über das 3. grösste Skigebiet der Schweiz. Aber auch im  Sommer hat Adelboden viel zu bieten.</p>
@@ -247,7 +292,7 @@
                 <p>Das Chalet Arnika befindet sich im Stiegelschwand, ca. 2 km oberhalb des Dorfes an ruhiger und sonniger Südhanglage mit herrlicher Aussicht in Richtung Gilbach auf Lohner, Steghorn. und Tschingellochtighorn.</p>
           </article>
           <article>            	    
-                <img src="img/icon3.png" alt="Anfahrt"/>                
+                <img src="img/icon3.png" alt="Icon Anfahrt - Wegbeschreibung zum Chalet Arnika Adelboden"/>                
             <h3>Anfahrt</h3>
               <p>Im Winter ist das Haus nur zu Fuss (2 Min.)  erreichbar. Parkmöglichkeiten gibt es unten am Weg oder bei schneefreien Strassen direkt vor dem Chalet.    </p>
                 <p>Auto: 3 Min. ab Adelboden Dorf. </p>
@@ -278,7 +323,7 @@
                 <figure>
                     <a class="various fancybox.iframe" href="build/virtualtour.html" title="Virtueller Rundgang"> 
                     <span class="thumb-screen"></span>
-                        <img src="img/tour-slide-sml.jpg" alt="Virtueller Rundgang"/>
+                        <img src="img/tour-slide-sml.jpg" alt="Virtueller 360-Grad Rundgang durch die Ferienwohnung Chalet Arnika"/>
                     </a>
                     <figcaption>
                         <strong>
@@ -293,7 +338,7 @@
                 <figure>  
                	  <a href="img/chalet-slide-3.jpg" rel="lightbox[Diashow1]" title="Chalet Arnika">
                         <span class="thumb-screen"></span>
-                        <img src="img/chalet-slide-3sml.jpg" alt="Chalet und Aussicht"/>
+                        <img src="img/chalet-slide-3sml.jpg" alt="Chalet Arnika Aussenansicht mit Bergpanorama Lohner und Steghorn"/>
                     </a>
                     <a href="img/chalet-slide-1.jpg" rel="lightbox[Diashow1]" title="Grillplatz im Garten"></a>
                     <a href="img/chalet-slide-11.jpg" rel="lightbox[Diashow1]" title="Chalet Arnika"></a>
@@ -320,7 +365,7 @@
                 <figure>
                   <a href="img/sommer-slide-2.jpg" rel="lightbox[Diashow2]" title="Sommerimpressionen">
                         <span class="thumb-screen"></span>
-                        <img src="img/sommer-slide-2-sml.jpg" alt="Chalet und Umgebung"/>
+                        <img src="img/sommer-slide-2-sml.jpg" alt="Sommerimpressionen Adelboden - Blühende Alpwiesen beim Chalet Arnika"/>
                     </a>
                     <a href="img/sommer-slide-1.jpg" rel="lightbox[Diashow2]" title="Sommerimpressionen"></a>
                   <a href="img/sommer-slide-3.jpg" rel="lightbox[Diashow2]" title="Sommerimpressionen"></a>
@@ -340,7 +385,7 @@
                 <figure>
                   <a href="img/winter-slide-1.jpg" rel="lightbox[Diashow3]" title="Winterimpressionen">
                         <span class="thumb-screen"></span>
-                        <img src="img/winter-slide-1-sml.jpg" alt="Winterimpressionen"/>
+                        <img src="img/winter-slide-1-sml.jpg" alt="Winterlandschaft Adelboden - Verschneite Berge beim Chalet Arnika"/>
                     </a>
                   <a href="img/winter-slide-3.jpg" rel="lightbox[Diashow3]" title="Winterimpressionen"></a>
                   <a href="img/winter-slide-2.jpg" rel="lightbox[Diashow3]" title="Winterimpressionen"></a>
@@ -447,7 +492,7 @@ inklusive  Parkplatz</p>
               <h3 class="hidden">Belegungsplan</h3>
                 <article class="row">  
                 	<h4 class="hidden">Belegungsplan</h4>                  
-                   <a class="various fancybox.iframe" href="belegungsplan.php">   <img src="img/icon6.png" width="80" class="rocket" alt="Some alt text"/></a>
+                   <a class="various fancybox.iframe" href="belegungsplan.php">   <img src="img/icon6.png" width="80" class="rocket" alt="Icon Belegungsplan - Verfügbarkeit der Ferienwohnung prüfen"/></a>
                     <p>Überprüfen Sie  die Verfügbarkeit der Wohnung. </p>
                     <p>&raquo; <a class="various fancybox.iframe" href="belegungsplan.php">                  
                Belegungsplan</a></p>
@@ -455,7 +500,7 @@ inklusive  Parkplatz</p>
                 </article> 
                 <article class="row">
                 	<h4 class="hidden">Ipsum</h4>
-                    <a href="#formular"><img src="img/icon5.png" width="80" class="contact" alt="Kontakt"/></a>
+                    <a href="#formular"><img src="img/icon5.png" width="80" class="contact" alt="Icon Kontakt - Reservationsanfrage Chalet Arnika"/></a>
                     <p>Über das Kontaktformular können Sie  eine unverbindliche Anfrage starten. Bei positiver Rückmeldung  erhalten Sie den Mietvertrag zur Unterzeichnung. </p>
                     <p>&raquo; <a href="#formular">Kontaktformular</a></p>
 </article>   
