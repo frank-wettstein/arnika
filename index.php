@@ -254,9 +254,21 @@
                 <img src="img/slide15.jpg" alt="Die Aussicht">
             </div>-->
             <div id="slides">
-                <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
-                <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
-                <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
+                <picture>
+                    <source srcset="img/slide4.avif" type="image/avif">
+                    <source srcset="img/slide4.webp" type="image/webp">
+                    <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
+                </picture>
+                <picture>
+                    <source srcset="img/slide5.avif" type="image/avif">
+                    <source srcset="img/slide5.webp" type="image/webp">
+                    <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
+                </picture>
+                <picture>
+                    <source srcset="img/slide7.avif" type="image/avif">
+                    <source srcset="img/slide7.webp" type="image/webp">
+                    <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
+                </picture>
 
             </div>
             
