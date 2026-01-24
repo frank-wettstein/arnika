@@ -301,9 +301,7 @@
                   
                
                 <p>&nbsp;</p>
-                <p>Bus: ab Adelboden Post mit dem Bus Nr. 36 bis Haltestelle &laquo;Jugendhaus Heilsarmee&raquo; (5 Min.). Nach weiteren 5 Min. Fussweg erreichen Sie das Arnika.</p>
-<p>&raquo; <a class="various fancybox.iframe" href="fahrplan.html" title="Online Fahrplan">                  
-               Fahrplan</a></p>
+                <p>Bus: ab Adelboden Post mit dem Bus Nr. 236 bis Haltestelle &laquo;Jugendhaus Heilsarmee&raquo; (5 Min.). Nach weiteren 5 Min. Fussweg erreichen Sie das Arnika.</p>
             </article>
             <br class="clear"/>
         </section>
@@ -321,7 +319,7 @@
           <article class="img-item">
             	<h3 class="hidden">Virtueller Rundgang</h3>
                 <figure>
-                    <a class="various fancybox.iframe" href="build/virtualtour.html" title="Virtueller Rundgang"> 
+                    <a class="various fancybox.iframe" href="ferienwohnung/virtualtour.html" title="Virtueller Rundgang"> 
                     <span class="thumb-screen"></span>
                         <img src="img/tour-slide-sml.jpg" alt="Virtueller 360-Grad Rundgang durch die Ferienwohnung Chalet Arnika"/>
                     </a>
