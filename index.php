@@ -228,25 +228,7 @@
             </nav>
         </header>
     <section class="container">
-   	  <h2 class="hidden">Lorem Ipsum</h2>
-           <!--  <article id="slider_content1">
-                <h3>Lorem ipsum dolor?</h3>
-                <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
-                <a class="button" href="javascript:void(0)">Mehr lesen</a>
-            </article>
-            <article id="slider_content2">
-                <h3>Nulla consequat</h3>
-                <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
-                <a class="button" href="javascript:void(0)">Mehr lesen</a>
-            </article>
-            <article id="slider_content3">
-                <h3>Lorem ipsum</h3>
-                <p>Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. <a href="javascript:void(0)" class="responsive_button">Mehr lesen...</a></p>
-                <a class="button" href="javascript:void(0)">Mehr lesen</a>
-            </article>-->
-           
-           <!--Sommer
-            <div id="slides">
+            <!--<div id="slides">
                 <img src="img/slide13.jpg" alt="Das Chalet">
                 <img src="img/slide11.jpg" alt="Die Aussicht">    	
                 <img src="img/slide12.jpg" alt="Die Aussicht">
@@ -269,7 +251,6 @@
                     <source srcset="img/slide7.webp" type="image/webp">
                     <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
                 </picture>
-
             </div>
             
         </section>
@@ -428,32 +409,38 @@
           <article class="img-item">
             	<h3 class="hidden">Sommerfilm Adelboden-Frutigen </h3>
                 <figure>
-                   <iframe width="200" height="113" src="https://www.youtube.com/embed/tD3hMqyvfSQ" frameborder="0" allowfullscreen></iframe>
+                   <a href="https://www.youtube.com/watch?v=tD3hMqyvfSQ" target="_blank" rel="noopener" class="youtube-link" title="Sommerfilm auf YouTube ansehen">
+                       <img src="https://img.youtube.com/vi/tD3hMqyvfSQ/mqdefault.jpg" alt="Sommerfilm Adelboden-Frutigen" loading="lazy" width="200" height="113">
+                   </a>
                     <figcaption>
                         <strong>
-                            Sommerfilm 
+                            Sommerfilm
                         </strong>
                         Adelboden-Frutigen</figcaption>
                 </figure>
           </article>
-          
+
           <article class="img-item">
             	<h3 class="hidden">Winterfilm Adelboden-Frutigen </h3>
                 <figure>
-                   <iframe width="200" height="113" src="https://www.youtube.com/embed/2xA9xrys0ao?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                   <a href="https://www.youtube.com/watch?v=2xA9xrys0ao" target="_blank" rel="noopener" class="youtube-link" title="Winterfilm auf YouTube ansehen">
+                       <img src="https://img.youtube.com/vi/2xA9xrys0ao/mqdefault.jpg" alt="Winterfilm Adelboden-Frutigen" loading="lazy" width="200" height="113">
+                   </a>
                     <figcaption>
                         <strong>
-                            Winterfilm 
+                            Winterfilm
                         </strong>
                         Adelboden-Frutigen</figcaption>
                 </figure>
           </article>
-          
-            
+
+
           <article class="img-item">
             	<h3 class="hidden">Archive film 1947</h3>
                 <figure>
-                <iframe width="200" height="113" src="https://www.youtube.com/embed/PFaZr5SeJ38?wmode=opaque" frameborder="0" allowfullscreen></iframe>
+                   <a href="https://www.youtube.com/watch?v=PFaZr5SeJ38" target="_blank" rel="noopener" class="youtube-link" title="Archivfilm auf YouTube ansehen">
+                       <img src="https://img.youtube.com/vi/PFaZr5SeJ38/mqdefault.jpg" alt="Archivfilm von 1947" loading="lazy" width="200" height="113">
+                   </a>
                     <figcaption>
                         <strong>
                             Archivfilm von 1947
