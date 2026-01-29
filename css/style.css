@@ -210,18 +210,22 @@ ul
 
 #boxcontent
 {
-        width:auto;
-        max-width:900px;
-        margin:0 auto;
-        padding:70px 0 45px 0;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 70px 40px 45px 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
 }
 
 #boxcontent article
 {
-        float:left;
-        width:250px;
-        margin-right:45px;
-        font-size:14px;
+        flex: 1 1 calc(33.333% - 20px);
+        min-width: 250px;
+        font-size: 14px;
 }
 
 #boxcontent articlelarge
@@ -819,10 +823,6 @@ footer .wrapper .column h4
                 width: 100%;
                 max-width: 100%;
         }
-        header
-        {
-                height:120px;
-        }
         header nav
         {
                 right: auto;
@@ -882,11 +882,15 @@ footer .wrapper .column h4
         {
             margin-top: 80px;
             text-align: center;
-        }        
+        }
         #spacer
         {
                 height:auto;
                 padding-bottom:15px;
+        }
+        #boxcontent
+        {
+                padding: 40px 15px 30px 15px;
         }
         #four_columns
         {
@@ -993,10 +997,6 @@ footer .wrapper .column h4
         header nav
         {
                 display:none;
-        }
-        header h1
-        {
-                font-size:40px;
         }
         header p
         {
