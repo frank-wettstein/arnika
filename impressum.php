@@ -258,7 +258,8 @@
             <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>
         </section>
         <section id="boxcontent">
-            <h2>Impressum</h2>
+          <article class="large"
+            <h3>Impressum</h3>
             <address>
                 Frank Wettstein<br>
                 Alpenstrasse 21A<br>
@@ -281,6 +282,7 @@
                     }
                 })();
             </script>
+            </article>
             <br class="clear"/>
         </section>
     <section id="spacer">  
