@@ -263,6 +263,7 @@
                 2502 Biel<br>
                 E-Mail: <span id="email-container"></span>
             </address>
+            <p></p>
 	    <h3>Haftungshinweis</h3>
             <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
