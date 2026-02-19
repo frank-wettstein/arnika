@@ -267,10 +267,15 @@
                 E-Mail: <span id="email-container"></span>
                 <noscript>arnika [at] chalet-adelboden [dot] ch</noscript>
             </address>
+            <br/>
             <h3>Haftungshinweis</h3>
             Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
-deren Betreiber verantwortlich. <
+deren Betreiber verantwortlich. 
+            <br/>
+            <h3>Datenschutzerklärung</h3>
+             Ihre mittels Kontaktformular übermittelten Angaben (Name, Vorname und E-MailAdresse) werden nicht für Marketing-Zwecke verwendet. Falls es zu keiner Vermietung
+der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht. 
             <script>
                 (function() {
                     var u = 'arnika';
