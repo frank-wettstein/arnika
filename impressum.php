@@ -257,12 +257,12 @@
         <section id="boxcontent">
           <article class="large">
             <h3>Impressum</h3>
-            <p><address>
+            <address>
                 Frank Wettstein<br>
                 Alpenstrasse 21A<br>
-                2502 Biel<br><br>
+                2502 Biel<br>
                 E-Mail: <span id="email-container"></span>
-            </address></p3>
+            </address>
 	    <h3>Haftungshinweis</h3>
             <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
