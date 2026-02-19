@@ -258,7 +258,7 @@
             <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>
         </section>
         <section id="boxcontent">
-          <article class="large"
+          <article class="large">
             <h3>Impressum</h3>
             <address>
                 Frank Wettstein<br>
@@ -267,6 +267,10 @@
                 E-Mail: <span id="email-container"></span>
                 <noscript>arnika [at] chalet-adelboden [dot] ch</noscript>
             </address>
+            <h3>Haftungshinweis</h3>
+            Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
+für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
+deren Betreiber verantwortlich. <
             <script>
                 (function() {
                     var u = 'arnika';
