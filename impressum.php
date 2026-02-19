@@ -204,10 +204,9 @@
             </div>
             <div id="mobileMenu">
                 <ul>
-                    
-                  <li><a href="/#spacer">Ferienwohnung</a></li>
-                    <li><a href="/#galerie">Galerie</a></li>
-                    <li><a href="/#reservation">Reservation</a></li>
+                  <li><a href="https://www.chalet-adelboden.ch/#spacer">Ferienwohnung</a></li>
+                  <li><a href="https://www.chalet-adelboden.ch/#galerie">Galerie</a></li>
+                  <li><a href="https://www.chalet-adelboden.ch/#reservation">Reservation</a></li>
                 </ul>
             </div>           
             <h1><a href="/">Chalet Arnika</a></h1>
@@ -233,7 +232,6 @@
                 <img src="img/slide15.jpg" alt="Die Aussicht">
             </div>-->
             <div id="slides">
-                <a href="/">
                 <picture>
                     <source srcset="img/slide4.avif" type="image/avif">
                     <source srcset="img/slide4.webp" type="image/webp">
@@ -249,7 +247,6 @@
                     <source srcset="img/slide7.webp" type="image/webp">
                     <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
                 </picture>
-                </a>
             </div>
             
         </section>
