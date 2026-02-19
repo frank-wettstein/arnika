@@ -210,7 +210,7 @@
                     <li><a href="#reservation">Reservation</a></li>
                 </ul>
             </div>           
-            <h1>Chalet Arnika</h1>
+            <h1><a href="/">Chalet Arnika</a></h1>
             <p>Röschtalweg 8 | 3715 Adelboden </p>           
             
             <nav>
