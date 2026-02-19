@@ -236,7 +236,7 @@ ul
         font-size:14px;
 }
 
-#boxcontent article h3,  
+#boxcontent article h3, #boxcontent article.large h3
 {
         font-family: 'Raleway', sans-serif;
         font-size:20px;
