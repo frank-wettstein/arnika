@@ -217,7 +217,6 @@
             <p>Röschtalweg 8 | 3715 Adelboden </p>           
             
             <nav>
-            	<h2 class="hidden">Navigation</h2>
                 <ul>
                    
                   <li><a href="#spacer">Ferienwohnung</a></li>
@@ -255,11 +254,9 @@
             
         </section>
     <section id="spacer">  
-        	<h2 class="hidden">Beschreibung der Ferienwohnung</h2>          
             <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>
         </section>
         <section id="boxcontent">
-       	  <h2 class="hidden">Beschreibung Wohnung</h2>
             <article>            	               
                 <img src="img/icon1.png" alt="Icon Wohnungsbeschreibung - 4,5-Zimmer-Ferienwohnung Adelboden"/>                
                 <h3>Beschreibung</h3>
@@ -267,8 +264,8 @@
                <ul class="subspace">
                   <li> 3 Schlafzimmer (5 Betten, 1 Kindergitterbett), </li>
                   <li>Wohnzimmer mit  Essplatz und gemütlicher Sitzecke, </li>
-                  <li>Telefon, Sat-TV, Radio,</li>
-                  <li> Küche (Geschirrspüler, Backofen, etc.), </li>
+                  <li>TV, Radio,</li>
+                  <li>Küche (Geschirrspüler, Backofen, etc.), </li>
                   <li>Bad mit Dusche und 2 Lavabos, </li>
                   <li>separates WC,</li>
                   <li>grosser Balkon in südwestlicher Richtung mit windgeschützter Sitzecke.</li>
@@ -299,7 +296,6 @@
             <br class="clear"/>
         </section>
     <section id="spacer">  
-   	  <h2 class="hidden">Fotogalerie</h2>          
             <p class="center"><a id="galerie"></a>Das Schönste ist die Aussicht ... &nbsp;und die Ruhe . </p>
     </section>
         <section id="four_columns">
@@ -310,7 +306,6 @@
           </h2>    
           
           <article class="img-item">
-            	<h3 class="hidden">Virtueller Rundgang</h3>
                 <figure>
                     <a class="various fancybox.iframe" href="ferienwohnung/virtualtour.html" title="Virtueller Rundgang"> 
                     <span class="thumb-screen"></span>
@@ -325,7 +320,6 @@
             </article>
             
             <article class="img-item">		
-            	<h3 class="hidden">Fotogalerie Chalet</h3>
                 <figure>  
                	  <a href="img/chalet-slide-3.jpg" rel="lightbox[Diashow1]" title="Chalet Arnika">
                         <span class="thumb-screen"></span>
@@ -352,7 +346,6 @@
                 </figure>
             </article>
             <article class="img-item">
-            	<h3 class="hidden">Fotogalerie Sommer</h3>
                 <figure>
                   <a href="img/sommer-slide-2.jpg" rel="lightbox[Diashow2]" title="Sommerimpressionen">
                         <span class="thumb-screen"></span>
@@ -372,7 +365,6 @@
                 </figure>
             </article>
             <article class="img-item">
-            	<h3 class="hidden">Winterimpressionen</h3>
                 <figure>
                   <a href="img/winter-slide-1.jpg" rel="lightbox[Diashow3]" title="Winterimpressionen">
                         <span class="thumb-screen"></span>
@@ -407,7 +399,6 @@
           </h2>    
           
           <article class="img-item">
-            	<h3 class="hidden">Sommerfilm Adelboden-Frutigen </h3>
                 <figure>
                    <a href="https://www.youtube.com/watch?v=tD3hMqyvfSQ" target="_blank" rel="noopener" class="youtube-link" title="Sommerfilm auf YouTube ansehen">
                        <img src="https://img.youtube.com/vi/tD3hMqyvfSQ/mqdefault.jpg" alt="Sommerfilm Adelboden-Frutigen" loading="lazy" width="200" height="113">
@@ -421,7 +412,6 @@
           </article>
 
           <article class="img-item">
-            	<h3 class="hidden">Winterfilm Adelboden-Frutigen </h3>
                 <figure>
                    <a href="https://www.youtube.com/watch?v=2xA9xrys0ao" target="_blank" rel="noopener" class="youtube-link" title="Winterfilm auf YouTube ansehen">
                        <img src="https://img.youtube.com/vi/2xA9xrys0ao/mqdefault.jpg" alt="Winterfilm Adelboden-Frutigen" loading="lazy" width="200" height="113">
@@ -436,7 +426,6 @@
 
 
           <article class="img-item">
-            	<h3 class="hidden">Archive film 1947</h3>
                 <figure>
                    <a href="https://www.youtube.com/watch?v=PFaZr5SeJ38" target="_blank" rel="noopener" class="youtube-link" title="Archivfilm auf YouTube ansehen">
                        <img src="https://img.youtube.com/vi/PFaZr5SeJ38/mqdefault.jpg" alt="Archivfilm von 1947" loading="lazy" width="200" height="113">
@@ -457,12 +446,10 @@
         
         
     <section id="spacer">  
-        	<h2 class="hidden">Sind Sie interessiert?</h2>          
             <p class="center"><a id="reservation"></a>Sind Sie interessiert ? </p>
     </section>
     
         <section id="text_columns">
-        	<h2 class="hidden">Preis und Reservation</h2>
             <article class="column1">   
                 <h3>Preise &amp; Reservation</h3>
                 <p>Die Nichtraucherwohnung wird wochenweise vermietet und steht am Anreisetag ab 15 Uhr und am Abreisetag bis 10 Uhr zu Ihrer Verfügung. </p>
@@ -486,9 +473,7 @@ inklusive  Parkplatz</p>
             <section class="column2">
             </section>
             <section class="column2">
-              <h3 class="hidden">Belegungsplan</h3>
                 <article class="row">  
-                	<h4 class="hidden">Belegungsplan</h4>                  
                    <a class="various fancybox.iframe" href="belegungsplan.php">   <img src="img/icon6.png" width="80" class="rocket" alt="Icon Belegungsplan - Verfügbarkeit der Ferienwohnung prüfen"/></a>
                     <p>Überprüfen Sie  die Verfügbarkeit der Wohnung. </p>
                     <p>&raquo; <a class="various fancybox.iframe" href="belegungsplan.php">                  
@@ -496,7 +481,6 @@ inklusive  Parkplatz</p>
                   
                 </article> 
                 <article class="row">
-                	<h4 class="hidden">Ipsum</h4>
                     <a href="#formular"><img src="img/icon5.png" width="80" class="contact" alt="Icon Kontakt - Reservationsanfrage Chalet Arnika"/></a>
                     <p>Über das Kontaktformular können Sie  eine unverbindliche Anfrage starten. Bei positiver Rückmeldung  erhalten Sie den Mietvertrag zur Unterzeichnung. </p>
                     <p>&raquo; <a href="#formular">Kontaktformular</a></p>
@@ -504,15 +488,12 @@ inklusive  Parkplatz</p>
             </section>
         </section>
         <footer>
-       	  <h2 class="hidden">Footer Chalet Arnika</h2>
             <section id="copyright">
-            	<h3 class="hidden">Copyright Angaben</h3>
                 <div class="wrapper">
                     
                 &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="impressum.php" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
             </section>
             <section class="wrapper">
-            	<h3 class="hidden">Reservationsanfrage</h3>
                 <article class="column">
                     <h4><a id="formular"></a>Kontakt & Reservationsanfragen</h4>
                     <p>Sind Sie an weiteren Informationen interessiert? Möchten Sie, dass ich Kontakt mit Ihnen aufnehme? Oder wollen Sie direkt eine Reservationsanfrage machen?
