@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html><head>
         <meta charset="UTF-8">
@@ -15,9 +14,9 @@
         <meta property="og:locale" content="de_CH" />
 
         <!-- Canonical URL -->
-        <link rel="canonical" href="https://www.chalet-adelboden.ch/impressum.php" />
+        <link rel="canonical" href="https://www.chalet-adelboden.ch/" />
         <meta name="author" content="ferrari@web5.ch">
-        <meta name="copyright" content="(c)Chalet Arnika, Frank Wettstein">
+        <meta name="copyright" content="(c)Chalet Arnika, Dora Wettstein">
         <meta name="page-topic" content="Ferien, Immobilien">
         <meta name="robots" content="index,follow">
         <meta name="revisit-after" content="7 days">
@@ -254,37 +253,12 @@
             </div>
             
         </section>
-    <section id="spacer">
-                <h2>Impressum </h2>  
-                <p>Frank Wettstein</p>
-                <p>Alpenstrasse 21A</p>
-                <p>2502 Biel/Bienne</p>
-                <p>E-Mail: <a href="" id="contact"></a>
-                  
-                </p>
-              <p>&raquo; <a class="various fancybox.iframe" href="ferienwohnung/virtualtour.html" title="Virtueller Rundgang">                  
-               Virtueller Rundgang</a></p>
-            </article>
-          <article>            	     
-                <img src="img/icon2.png" alt="Icon Lage - Chalet Arnika im Stiegelschwand oberhalb Adelboden"/>              
-            <h3>Lage</h3>
-              <p>        	
-              Adelboden (1'350 m ü. M., ) liegt im Westen des Berner Oberlands, am Ende des Engstligentals und  verfügt über das 3. grösste Skigebiet der Schweiz. Aber auch im  Sommer hat Adelboden viel zu bieten.</p>
-<p>&nbsp;</p>
-                <p>Das Chalet Arnika befindet sich im Stiegelschwand, ca. 2 km oberhalb des Dorfes an ruhiger und sonniger Südhanglage mit herrlicher Aussicht in Richtung Gilbach auf Lohner, Steghorn. und Tschingellochtighorn.</p>
-          </article>
-          <article>            	    
-                <img src="img/icon3.png" alt="Icon Anfahrt - Wegbeschreibung zum Chalet Arnika Adelboden"/>                
-            <h3>Anfahrt</h3>
-              <p>Im Winter ist das Haus nur zu Fuss (2 Min.)  erreichbar. Parkmöglichkeiten gibt es unten am Weg oder bei schneefreien Strassen direkt vor dem Chalet.    </p>
-                <p>Auto: 3 Min. ab Adelboden Dorf. </p>
-                       <p>&raquo; <a class="various fancybox.iframe" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5591.375515652908!2d7.5506234!3d46.485896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f020e18e800bd%3A0x33753601060e40f0!2sR%C3%B6schtalweg+8%2C+3715+Adelboden!5e1!3m2!1sde!2sch!4v1422444449716" title="Routenplaner">                  
-                         Routenplaner</a></p>
-                  
-               
-                <p>&nbsp;</p>
-                <p>Bus: ab Adelboden Post mit dem Bus Nr. 236 bis Haltestelle &laquo;Jugendhaus Heilsarmee&raquo; (5 Min.). Nach weiteren 5 Min. Fussweg erreichen Sie das Arnika.</p>
-            </article>
+    <section id="spacer">  
+        	<h2 class="hidden">Beschreibung der Ferienwohnung</h2>          
+            <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>
+        </section>
+        <section id="boxcontent">
+            Test
             <br class="clear"/>
         </section>
     <section id="spacer">  
@@ -498,7 +472,7 @@ inklusive  Parkplatz</p>
             	<h3 class="hidden">Copyright Angaben</h3>
                 <div class="wrapper">
                     
-                &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="Impressum.pdf" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
+                &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="Impressum.php" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
             </section>
             <section class="wrapper">
             	<h3 class="hidden">Reservationsanfrage</h3>
