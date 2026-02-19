@@ -66,32 +66,68 @@
         
         <script>
         $(function() {
-          $('#slides').slidesjs({	
+          var winterInited = false;
+          var sommerInited = false;
+
+          var slidesConfig = {
             height: 300,
             navigation: false,
             pagination: false,
             effect: {
-              fade: {
-                speed: 400
-              }
+              fade: { speed: 400 }
             },
             callback: {
-                start: function(number)
-                {			
-                    $("#slider_content1,#slider_content2,#slider_content3").fadeOut(1000);
-                },
-                complete: function(number)
-                {			
-                    $("#slider_content" + number).delay(1000).fadeIn(2000);
-                }		
+              start: function(number) {
+                $("#slider_content1,#slider_content2,#slider_content3").fadeOut(1000);
+              },
+              complete: function(number) {
+                $("#slider_content" + number).delay(1000).fadeIn(2000);
+              }
             },
             play: {
-                active: false,
-                auto: true,
-                interval: 5000,
-                pauseOnHover: false,
-                effect: "fade"
+              active: false,
+              auto: true,
+              interval: 5000,
+              pauseOnHover: false,
+              effect: "fade"
             }
+          };
+
+          function initWinter() {
+            if (!winterInited) {
+              $('#slides-winter').slidesjs(slidesConfig);
+              winterInited = true;
+            }
+          }
+
+          function initSommer() {
+            if (!sommerInited) {
+              $('#slides-sommer').slidesjs(slidesConfig);
+              sommerInited = true;
+            }
+          }
+
+          function applyMode(mode) {
+            if (mode === 'sommer') {
+              $('#slides-wrapper-winter').hide();
+              $('#slides-wrapper-sommer').show();
+              initSommer();
+              $('#season-toggle').html('❄ Winter').attr('title', 'Zu Winteransicht wechseln').removeClass('mode-sommer').addClass('mode-winter');
+            } else {
+              $('#slides-wrapper-sommer').hide();
+              $('#slides-wrapper-winter').show();
+              initWinter();
+              $('#season-toggle').html('☀ Sommer').attr('title', 'Zu Sommeransicht wechseln').removeClass('mode-winter').addClass('mode-sommer');
+            }
+            localStorage.setItem('seasonMode', mode);
+          }
+
+          var savedMode = localStorage.getItem('seasonMode') || 'winter';
+          applyMode(savedMode);
+
+          $('#season-toggle').click(function() {
+            var current = localStorage.getItem('seasonMode') || 'winter';
+            applyMode(current === 'winter' ? 'sommer' : 'winter');
           });
         });
         </script>
@@ -218,40 +254,55 @@
             
             <nav>
                 <ul>
-                   
+
                   <li><a href="#spacer">Ferienwohnung</a></li>
                     <li><a href="#galerie">Galerie</a></li>
                     <li><a href="#reservation">Reservation</a></li>
-                   
+
               </ul>
             </nav>
+            <button id="season-toggle" title="Zu Sommeransicht wechseln">☀ Sommer</button>
         </header>
     <section class="container">
-            <!--<div id="slides">
-                <img src="img/slide13.jpg" alt="Das Chalet">
-                <img src="img/slide11.jpg" alt="Die Aussicht">    	
-                <img src="img/slide12.jpg" alt="Die Aussicht">
-                <img src="img/slide14.jpg" alt="Die Aussicht">    	
-                <img src="img/slide15.jpg" alt="Die Aussicht">
-            </div>-->
-            <div id="slides">
-                <picture>
-                    <source srcset="img/slide4.avif" type="image/avif">
-                    <source srcset="img/slide4.webp" type="image/webp">
-                    <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
-                </picture>
-                <picture>
-                    <source srcset="img/slide5.avif" type="image/avif">
-                    <source srcset="img/slide5.webp" type="image/webp">
-                    <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
-                </picture>
-                <picture>
-                    <source srcset="img/slide7.avif" type="image/avif">
-                    <source srcset="img/slide7.webp" type="image/webp">
-                    <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
-                </picture>
+            <div id="slides-wrapper-sommer">
+                <div id="slides-sommer">
+                    <picture>
+                        <source srcset="img/slide13.avif" type="image/avif">
+                        <source srcset="img/slide13.webp" type="image/webp">
+                        <img src="img/slide13.jpg" alt="Sommerimpressionen Adelboden – blühende Alpwiesen beim Chalet Arnika">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide11.avif" type="image/avif">
+                        <source srcset="img/slide11.webp" type="image/webp">
+                        <img src="img/slide11.jpg" alt="Sommerliche Berglandschaft rund um das Chalet Arnika in Adelboden">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide15.avif" type="image/avif">
+                        <source srcset="img/slide15.webp" type="image/webp">
+                        <img src="img/slide15.jpg" alt="Idyllische Sommerlandschaft mit Aussicht auf das Berner Oberland">
+                    </picture>
+                </div>
             </div>
-            
+            <div id="slides-wrapper-winter">
+                <div id="slides-winter">
+                    <picture>
+                        <source srcset="img/slide4.avif" type="image/avif">
+                        <source srcset="img/slide4.webp" type="image/webp">
+                        <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide5.avif" type="image/avif">
+                        <source srcset="img/slide5.webp" type="image/webp">
+                        <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide7.avif" type="image/avif">
+                        <source srcset="img/slide7.webp" type="image/webp">
+                        <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
+                    </picture>
+                </div>
+            </div>
+
         </section>
     <section id="spacer">  
             <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>

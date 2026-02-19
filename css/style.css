@@ -653,19 +653,48 @@ footer .wrapper .column h4
 {
         border-top: 1px #d6d0c1 solid;
 }
-#slides
+#slides-winter,
+#slides-sommer
 {
         display: none
 }
 
-#slides picture,
-#slides picture img,
+#slides-winter picture,
+#slides-winter picture img,
+#slides-sommer picture,
+#slides-sommer picture img,
 .slidesjs-container picture,
 .slidesjs-container picture img
 {
         width: 100%;
         height: auto;
         display: block;
+}
+
+/* SEASON TOGGLE BUTTON */
+#season-toggle
+{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        background: transparent;
+        border: 2px solid #e56038;
+        border-radius: 20px;
+        padding: 5px 14px;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+        font-size: 13px;
+        color: #e56038;
+        transition: background 0.3s ease, color 0.3s ease;
+        z-index: 10;
+        min-width: 100px;
+        text-align: center;
+        line-height: 1.4;
+}
+#season-toggle:hover
+{
+        background: #e56038;
+        color: #fff;
 }
 
 /* Center the slideshow */
@@ -882,6 +911,14 @@ footer .wrapper .column h4
         {
             margin-top: 80px;
             text-align: center;
+        }
+        #season-toggle
+        {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            font-size: 12px;
+            padding: 4px 10px;
         }
         #spacer
         {

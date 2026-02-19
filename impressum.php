@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html><head>
         <meta charset="UTF-8">
@@ -32,19 +33,21 @@
         <meta name="apple-mobile-web-app-title" content="Arnika" />
         <link rel="manifest" href="/site.webmanifest" />
         <link href='https://fonts.googleapis.com/css?family=Courgette|Baumans|Yellowtail|Satisfy|Raleway' rel='stylesheet' type='text/css'>
- 		
+
+
+
         <script src="js/vendor/modernizr.min.js"></script>
         <script src="js/vendor/respond.min.js"></script>
-        
+
         <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
         <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
         <script type="text/javascript">window.jQuery || document.write('<script type="text/javascript" src="js\/vendor\/1.7.2.jquery.min"><\/script>')</script>
-        
+
         <script src="lightbox/js/lightbox.js"></script>
         <script src="js/vendor/prefixfree.min.js"></script>
         <script src="js/vendor/jquery.slides.min.js"></script>
         <script src="js/script.js"></script>
-        
+
         <!--[if lt IE 9]>
             <style>
                 header
@@ -54,47 +57,84 @@
                 #four_columns .img-item figure span.thumb-screen
                 {
                     display:none;
-                }  
+                }
             </style>
         <![endif]-->
-        
- 
-        
-        
+
+
+
+
+
         <script>
         $(function() {
-          $('#slides').slidesjs({	
+          var winterInited = false;
+          var sommerInited = false;
+
+          var slidesConfig = {
             height: 300,
             navigation: false,
             pagination: false,
             effect: {
-              fade: {
-                speed: 400
-              }
+              fade: { speed: 400 }
             },
             callback: {
-                start: function(number)
-                {			
-                    $("#slider_content1,#slider_content2,#slider_content3").fadeOut(1000);
-                },
-                complete: function(number)
-                {			
-                    $("#slider_content" + number).delay(1000).fadeIn(2000);
-                }		
+              start: function(number) {
+                $("#slider_content1,#slider_content2,#slider_content3").fadeOut(1000);
+              },
+              complete: function(number) {
+                $("#slider_content" + number).delay(1000).fadeIn(2000);
+              }
             },
             play: {
-                active: false,
-                auto: true,
-                interval: 5000,
-                pauseOnHover: false,
-                effect: "fade"
+              active: false,
+              auto: true,
+              interval: 5000,
+              pauseOnHover: false,
+              effect: "fade"
             }
+          };
+
+          function initWinter() {
+            if (!winterInited) {
+              $('#slides-winter').slidesjs(slidesConfig);
+              winterInited = true;
+            }
+          }
+
+          function initSommer() {
+            if (!sommerInited) {
+              $('#slides-sommer').slidesjs(slidesConfig);
+              sommerInited = true;
+            }
+          }
+
+          function applyMode(mode) {
+            if (mode === 'sommer') {
+              $('#slides-wrapper-winter').hide();
+              $('#slides-wrapper-sommer').show();
+              initSommer();
+              $('#season-toggle').html('❄ Winter').attr('title', 'Zu Winteransicht wechseln').removeClass('mode-sommer').addClass('mode-winter');
+            } else {
+              $('#slides-wrapper-sommer').hide();
+              $('#slides-wrapper-winter').show();
+              initWinter();
+              $('#season-toggle').html('☀ Sommer').attr('title', 'Zu Sommeransicht wechseln').removeClass('mode-winter').addClass('mode-sommer');
+            }
+            localStorage.setItem('seasonMode', mode);
+          }
+
+          var savedMode = localStorage.getItem('seasonMode') || 'winter';
+          applyMode(savedMode);
+
+          $('#season-toggle').click(function() {
+            var current = localStorage.getItem('seasonMode') || 'winter';
+            applyMode(current === 'winter' ? 'sommer' : 'winter');
           });
         });
         </script>
-        
 
-       <!-- Scroll Top --> 
+
+       <!-- Scroll Top -->
  <script>
 	$(function() {
 	  $('a[href*=#]:not([href=#])').click(function() {
@@ -112,8 +152,8 @@
 	  });
 	});
 	</script>
-    
-  
+
+
 
 	<!-- Add mousewheel plugin (this is optional) -->
 	<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -134,13 +174,13 @@
 	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
 
 	<script type="text/javascript">
-	
 
 
-		
+
+
 
 	/*
-	 *  Fancy Box 
+	 *  Fancy Box
 	 */
 
 	$(document).ready(function() {
@@ -157,7 +197,7 @@
 	});
 });
 	</script>
-	
+
 
         <!-- Strukturierte Daten / Schema.org -->
         <script type="application/ld+json">
@@ -204,54 +244,68 @@
             </div>
             <div id="mobileMenu">
                 <ul>
-                  <li><a href="https://www.chalet-adelboden.ch/#spacer">Ferienwohnung</a></li>
-                  <li><a href="https://www.chalet-adelboden.ch/#galerie">Galerie</a></li>
-                  <li><a href="https://www.chalet-adelboden.ch/#reservation">Reservation</a></li>
+
+                  <li><a href="/#spacer">Ferienwohnung</a></li>
+                    <li><a href="/#galerie">Galerie</a></li>
+                    <li><a href="/#reservation">Reservation</a></li>
                 </ul>
-            </div>           
-            <h1><a href="/">Chalet Arnika</a></h1>
-            <p>Röschtalweg 8 | 3715 Adelboden </p>           
-            
+            </div>
+            <h1>Chalet Arnika</h1>
+            <p>Röschtalweg 8 | 3715 Adelboden </p>
+
             <nav>
-            	<h2 class="hidden">Navigation</h2>
                 <ul>
-                   
-                  <li><a href="https://www.chalet-adelboden.ch/#spacer">Ferienwohnung</a></li>
-                    <li><a href="https://www.chalet-adelboden.ch/#galerie">Galerie</a></li>
-                    <li><a href="https://www.chalet-adelboden.ch/##reservation">Reservation</a></li>
-                   
+
+                  <li><a href="/#spacer">Ferienwohnung</a></li>
+                    <li><a href="/#galerie">Galerie</a></li>
+                    <li><a href=/"#reservation">Reservation</a></li>
+
               </ul>
             </nav>
+            <button id="season-toggle" title="Zu Sommeransicht wechseln">☀ Sommer</button>
         </header>
     <section class="container">
-            <!--<div id="slides">
-                <img src="img/slide13.jpg" alt="Das Chalet">
-                <img src="img/slide11.jpg" alt="Die Aussicht">    	
-                <img src="img/slide12.jpg" alt="Die Aussicht">
-                <img src="img/slide14.jpg" alt="Die Aussicht">    	
-                <img src="img/slide15.jpg" alt="Die Aussicht">
-            </div>-->
-            <div id="slides">
-                <picture>
-                    <source srcset="img/slide4.avif" type="image/avif">
-                    <source srcset="img/slide4.webp" type="image/webp">
-                    <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
-                </picture>
-                <picture>
-                    <source srcset="img/slide5.avif" type="image/avif">
-                    <source srcset="img/slide5.webp" type="image/webp">
-                    <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
-                </picture>
-                <picture>
-                    <source srcset="img/slide7.avif" type="image/avif">
-                    <source srcset="img/slide7.webp" type="image/webp">
-                    <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
-                </picture>
+            <div id="slides-wrapper-sommer">
+                <div id="slides-sommer">
+                    <picture>
+                        <source srcset="img/slide13.avif" type="image/avif">
+                        <source srcset="img/slide13.webp" type="image/webp">
+                        <img src="img/slide13.jpg" alt="Sommerimpressionen Adelboden – blühende Alpwiesen beim Chalet Arnika">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide11.avif" type="image/avif">
+                        <source srcset="img/slide11.webp" type="image/webp">
+                        <img src="img/slide11.jpg" alt="Sommerliche Berglandschaft rund um das Chalet Arnika in Adelboden">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide15.avif" type="image/avif">
+                        <source srcset="img/slide15.webp" type="image/webp">
+                        <img src="img/slide15.jpg" alt="Idyllische Sommerlandschaft mit Aussicht auf das Berner Oberland">
+                    </picture>
+                </div>
             </div>
-            
+            <div id="slides-wrapper-winter">
+                <div id="slides-winter">
+                    <picture>
+                        <source srcset="img/slide4.avif" type="image/avif">
+                        <source srcset="img/slide4.webp" type="image/webp">
+                        <img src="img/slide4.jpg" alt="Chalet Arnika im Winter mit Blick auf die verschneiten Berge in Adelboden">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide5.avif" type="image/avif">
+                        <source srcset="img/slide5.webp" type="image/webp">
+                        <img src="img/slide5.jpg" alt="Winterpanorama vom Chalet Arnika mit Aussicht auf das Berner Oberland">
+                    </picture>
+                    <picture>
+                        <source srcset="img/slide7.avif" type="image/avif">
+                        <source srcset="img/slide7.webp" type="image/webp">
+                        <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
+                    </picture>
+                </div>
+            </div>
+
         </section>
-    <section id="spacer">  
-        	<h2 class="hidden">Beschreibung der Ferienwohnung</h2>          
+    <section id="spacer">
             <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>
         </section>
         <section id="boxcontent">
@@ -267,11 +321,11 @@
             <h3>Haftungshinweis</h3>
             <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
-deren Betreiber verantwortlich.</p> 
+deren Betreiber verantwortlich.</p>
             <br/><br/>
             <h3>Datenschutzerklärung</h3>
             <p>Ihre mittels Kontaktformular übermittelten Angaben (Name, Vorname und E-MailAdresse) werden nicht für Marketing-Zwecke verwendet. Falls es zu keiner Vermietung
-der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p> 
+der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
             <script>
                 (function() {
                     var u = 'arnika';
@@ -291,44 +345,41 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
             <br class="clear"/>
         </section>
         <footer>
-       	  <h2 class="hidden">Footer Chalet Arnika</h2>
             <section id="copyright">
-            	<h3 class="hidden">Copyright Angaben</h3>
                 <div class="wrapper">
-                    
-                &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="Impressum.php" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
+
+                &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="impressum.php" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
             </section>
             <section class="wrapper">
-            	<h3 class="hidden">Reservationsanfrage</h3>
                 <article class="column">
                     <h4><a id="formular"></a>Kontakt & Reservationsanfragen</h4>
                     <p>Sind Sie an weiteren Informationen interessiert? Möchten Sie, dass ich Kontakt mit Ihnen aufnehme? Oder wollen Sie direkt eine Reservationsanfrage machen?
                     </p>
                     <p>Ich freue mich auf Ihre Mailanfrage!</p>
                 </article>
-                
-                
-                
-                
-                
-                
+
+
+
+
+
+
  <!-- FORMULAR -->
 
-                    
+
                     <?php
-					
+
 	// sprachliche und regionale Einstellungen auf Deutsch
 	setlocale(LC_TIME, "de_DE.utf8"); // Deutsch (DE)
 	setlocale(LC_TIME, "de_AT.utf8"); // Deutsch (AT)
 	setlocale(LC_TIME, "de_CH.utf8"); // Deutsch (CH)
-	
+
 	/* C: Fehlerdefinitionen
 	---------------------------
 	Entscheide, welche Felder zwingend sind. Pro zwingendem Feld
 	definierst du einerseitzs, unter welchen Bedingungen die engegebnen
 	Daten flasch sind, andererseits eine entsprechende Fehlermeldung
 	*/
-	
+
 	$validierung = array();
 	$validierung['name']['istFalsch']		 = strlen($_POST['name']) < 2; // sind weniger als 2 Zeichen erfasst, dann gab ein TRUE, also ein falsch zurück
 	$validierung['name']['fehlerMeldung']	 = '- Vorname/Nachname';
@@ -336,7 +387,7 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
 	$validierung['email']['fehlerMeldung']		 = '- E-Mail-Adresse';
 	$validierung['wochentag']['istFalsch']	  	 = strtolower(strftime('%A'))  != strtolower($_POST['wochentag']);
 	$validierung['wochentag']['fehlerMeldung']	 = '- Heutiger Wochentag';
-	
+
 	/*
 	D: Gab's Fehler?
 	-------------------------
@@ -353,25 +404,25 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
 		// wurde dieses Feld falsch ausgefüllt?
 		if($eigenschaften['istFalsch']) {
 			// Ja, also muss das Formular doch gezeigt werden
-			$formularZeigen = TRUE;	
+			$formularZeigen = TRUE;
 			$fehlerMeldungen.= $eigenschaften['fehlerMeldung'];
 			$fehlerMeldungen.= '<br>';
 		}
 	}
 	// Falls das Formular gezeigt werden soll
 	if($formularZeigen) {
-		
+
 	/*
 	E: Fehlermeldungen anzeigen
 	---------------------------------
 	Aber nur, wenn das Formular wirklich verschickt wurde
 	*/
 	if($_POST) {
-		echo '<h4 class="fehlerMeldungen">Bitte folgende Felder erg&auml;nzen:<br>'.$fehlerMeldungen.'</h4>';	
-		
+		echo '<h4 class="fehlerMeldungen">Bitte folgende Felder erg&auml;nzen:<br>'.$fehlerMeldungen.'</h4>';
+
 	}
-	
-	
+
+
 ?>
 
 <form action="index.php#formular" method="post">
@@ -380,19 +431,19 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
 
 
 	<ul>
-       <li>    	
-        <input  type="text" name="name" id="name"  class="inputfield"  placeholder="Vorname / Nachname" 
+       <li>
+        <input  type="text" name="name" id="name"  class="inputfield"  placeholder="Vorname / Nachname"
         value="<?php echo htmlspecialchars(stripslashes($_POST['name'])); ?>">
     </li>
-          
-            
+
+
    	<li>
-     	<input  type="text" name="email" id="email"  class="inputfield" placeholder="E-Mail-Adresse" 
-        value="<?php echo htmlspecialchars(stripslashes($_POST['email'])); ?>"> 
+     	<input  type="text" name="email" id="email"  class="inputfield" placeholder="E-Mail-Adresse"
+        value="<?php echo htmlspecialchars(stripslashes($_POST['email'])); ?>">
     </li>
-    
-       
-     <li>     	
+
+
+     <li>
        	<input  type="text" name="wochentag" id="wochentag" class="inputfield" placeholder="Heutiger Wochentag">
     </li>
     </ul>
@@ -400,18 +451,18 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
   		<article class="column rightlist">
            <h4>und teilen Sie mir Ihr Anliegen mit.</h4>
               <ul>
-     		    <li> 
+     		    <li>
      			  <textarea name="mitteilung" id="mitteilung"  class="textarea" placeholder="Mitteilung"><?php echo htmlspecialchars(stripslashes($_POST['mitteilung']));?></textarea>
-    			</li>          
-   				 <li>	
+    			</li>
+   				 <li>
   			    <input type="submit" name="submit" value="senden" class="button" />
     			 </li></ul>
 
  </form>
 <?php
 	} // Ende if($formularZeigen)
-	
-	
+
+
 	/*
 	G: Alternative zu D
 	--------------------
@@ -419,7 +470,7 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
 	Rückmeldung an den Benutzer.
 	*/
 	else {
-		
+
 		// H: Datenverarbeitung, Versand als HTML-Mail an den Betreiber der Website
 		$html = file_get_contents('gui/mailvorlage.html');
 		// Alle Platzhalter durch die Benutzereingaben ersetzen
@@ -427,11 +478,11 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
 		$html = str_replace('***EMAIL***', $_POST['email'], $html);
 		// In der Mitteilung sollen Zeilenumbrüche übernommen werden (nl2br)
 		$html = str_replace('***MITTEILUNG***', nl2br($_POST['mitteilung']), $html);
-		
-		
+
+
 		// PHPMailer-Klasse inbetten
 		include('php/class.phpmailer.php');
-		
+
 		// Neue Instanz von PHPMailer erzeugen mittels $m (Analog Floash: symbol von Bibliothek auf die Bühne ziehen")
 		$m = new PHPMailer();
 		// Eigenschaften des Mail-objekts einstellen
@@ -443,28 +494,28 @@ der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p>
 		$m-> isHTML(TRUE);												// Es handelt sich um ein HTML-Mail
 		$m-> CharSet = 'utf-8';
 		$m-> Send();
-		
+
 		// Speicher freigeben
 		$m = null;
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
+
+
 		// I: Rückmeldung an den Benutzer, Vielen Dank und so....
 		echo '<h4>Vielen Dank für ihr Interesse. Ich melde mich schnellstmöglich bei ihnen.</h4>';
-		
-		
+
+
 	}
 	?>
-                   
+
                     <br class="clear"/>
                 </article>
             </section>
