@@ -205,9 +205,9 @@
             <div id="mobileMenu">
                 <ul>
                     
-                  <li><a href="#spacer">Ferienwohnung</a></li>
-                    <li><a href="#galerie">Galerie</a></li>
-                    <li><a href="#reservation">Reservation</a></li>
+                  <li><a href="/#spacer">Ferienwohnung</a></li>
+                    <li><a href="/#galerie">Galerie</a></li>
+                    <li><a href="/#reservation">Reservation</a></li>
                 </ul>
             </div>           
             <h1><a href="/">Chalet Arnika</a></h1>
