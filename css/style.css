@@ -249,7 +249,7 @@ ul
         float:left;
 }
 
-#boxcontent article p
+#boxcontent article p, #boxcontent address
 {
         line-height:25px;
         font-family: 'Raleway', sans-serif;
