@@ -216,9 +216,9 @@
             	<h2 class="hidden">Navigation</h2>
                 <ul>
                    
-                  <li><a href="#spacer">Ferienwohnung</a></li>
-                    <li><a href="#galerie">Galerie</a></li>
-                    <li><a href="#reservation">Reservation</a></li>
+                  <li><a href="https://www.chalet-adelboden.ch/#spacer">Ferienwohnung</a></li>
+                    <li><a href="https://www.chalet-adelboden.ch/#galerie">Galerie</a></li>
+                    <li><a href="https://www.chalet-adelboden.ch/##reservation">Reservation</a></li>
                    
               </ul>
             </nav>
