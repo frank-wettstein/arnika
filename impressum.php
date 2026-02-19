@@ -263,11 +263,12 @@
                 2502 Biel<br>
                 E-Mail: <span id="email-container"></span>
             </address>
-            <p></p>
-	    <h3>Haftungshinweis</h3>
+	    <br/><br/>
+            <h3>Haftungshinweis</h3>
             <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
 deren Betreiber verantwortlich.</p> 
+            <br/><br/>
             <h3>Datenschutzerklärung</h3>
             <p>Ihre mittels Kontaktformular übermittelten Angaben (Name, Vorname und E-MailAdresse) werden nicht für Marketing-Zwecke verwendet. Falls es zu keiner Vermietung
 der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p> 
