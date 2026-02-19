@@ -258,7 +258,12 @@
             <p>Gemütliche 4,5&#8211;Zimmer&#8211;Ferienwohnung in Adelboden zu vermieten .</p>
         </section>
         <section id="boxcontent">
-            Test
+            <h1>Impressum </h1>
+            <adresse>
+            Frank Wettstein <br>
+            Alpenstrasse 21A <br>
+            2502 Biel <br>
+            </adress>
             <br class="clear"/>
         </section>
     <section id="spacer">  
