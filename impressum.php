@@ -263,15 +263,13 @@
                 2502 Biel<br><br>
                 E-Mail: <span id="email-container"></span>
             </address>
-            <br/><br/>
             <h3>Haftungshinweis</h3>
-            Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
+            <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung
 für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich
-deren Betreiber verantwortlich. 
-            <br/><br/>
+deren Betreiber verantwortlich.</p> 
             <h3>Datenschutzerklärung</h3>
-             Ihre mittels Kontaktformular übermittelten Angaben (Name, Vorname und E-MailAdresse) werden nicht für Marketing-Zwecke verwendet. Falls es zu keiner Vermietung
-der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht. 
+            <p>Ihre mittels Kontaktformular übermittelten Angaben (Name, Vorname und E-MailAdresse) werden nicht für Marketing-Zwecke verwendet. Falls es zu keiner Vermietung
+der Ferienwohnung kommt, werden Ihre Daten unverzüglich gelöscht.</p> 
             <script>
                 (function() {
                     var u = 'arnika';
