@@ -509,7 +509,7 @@ inklusive  Parkplatz</p>
             	<h3 class="hidden">Copyright Angaben</h3>
                 <div class="wrapper">
                     
-                &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="Impressum.pdf" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
+                &copy; Copyright 2025 by <a href="http://www.web5.ch" target="_blank">web5</a>. All Rights Reserved.<a href="Impressum.php" title="Datenschutz &amp; Impressum" target="_blank"> Datenschutz & Impressum</a> </div>
             </section>
             <section class="wrapper">
             	<h3 class="hidden">Reservationsanfrage</h3>
