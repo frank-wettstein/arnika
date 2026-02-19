@@ -233,6 +233,7 @@
                 <img src="img/slide15.jpg" alt="Die Aussicht">
             </div>-->
             <div id="slides">
+                <a href="/">
                 <picture>
                     <source srcset="img/slide4.avif" type="image/avif">
                     <source srcset="img/slide4.webp" type="image/webp">
@@ -248,6 +249,7 @@
                     <source srcset="img/slide7.webp" type="image/webp">
                     <img src="img/slide7.jpg" alt="Schneelandschaft rund um die Ferienwohnung in Adelboden">
                 </picture>
+                </a>
             </div>
             
         </section>
