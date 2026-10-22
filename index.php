@@ -508,17 +508,16 @@
                 <p>Haustiere nur nach Rückfrage.</p>
 <p>&nbsp;</p>
                 <p><strong>Preis pro Woche: </strong><br>
-                CHF 500.00<br>
+                CHF 700.00<br>
 inklusive  Parkplatz</p>
 <p>&nbsp;</p>
                 <p><strong>Zusätzliche Kosten: </strong></p>
-               <p>               Endreinigung: CHF 60.00</p>
+               <p>               Endreinigung: CHF 80.00</p>
 <p>                  Bettwäsche pro Person: CHF 12.00
                </p>
-               <p>Heizung: CHF 50.00 pro Woche (Oktober&#8211;Mai)               </p>
                <p>Kurtaxe pro Übernachtung: <br>
-                 Erwachsene CHF 4.20, + Beherbergungsgebühr CHF 1.00<br>
-               Kinder (6–16 Jahre) CHF 2.10</p>
+                 Erwachsene CHF 4.70, + Beherbergungsgebühr CHF 1.00<br>
+               Kinder (6–15 Jahre) CHF 2.35</p>
                <blockquote>&nbsp;               </blockquote>
           </article>
             <section class="column2">

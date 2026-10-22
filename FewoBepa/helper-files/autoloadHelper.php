@@ -15,16 +15,12 @@
  * 
  * @param string $className
  */
-function __autoload($className)
+spl_autoload_register(function($className)
 {
 	$filePath = dirname(__FILE__).'/../class-files/';
 	if(file_exists($filePath.$className.'.php'))
 	{
 		require_once($filePath.$className.'.php');
 	}
-	else
-	{
-		throw new Exception();
-	}	
-}
+});
 ?>
